@@ -12,8 +12,8 @@ chaos:
       repository: false
       restController: true
     assaults:
-      level: 3
+      level: 1
       latencyActive: true
-      latencyRangeStart: 1000
-      latencyRangeEnd: 4000
-      exceptionsActive: true
+      latencyRangeStart: 500
+      latencyRangeEnd: 2000
+      exceptionsActive: false

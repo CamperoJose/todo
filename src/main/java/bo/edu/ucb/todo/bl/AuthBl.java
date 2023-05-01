@@ -15,6 +15,7 @@ public class AuthBl {
     public static final String KEY = "TigreCampeon2023";
 
     public TokenDto login(LoginDto login) {
+        System.out.println("login: " + login);
         if ("jperez".equals(login.getUsername()) &&
         "12345678".equals(login.getPassword())) {
             TokenDto tokenDto = new TokenDto();
@@ -24,7 +25,6 @@ public class AuthBl {
         } else {
             return null;
         }
-
     }
 
     private String  generateToken(Integer userId, String name, String type, int minutes) {

@@ -14,9 +14,9 @@ public class LabelBl {
 
     public LabelBl() {
         this.labels = new ArrayList<>();
-        this.labels.add(new LabelDto(1, "Universidad"));
-        this.labels.add(new LabelDto(2, "Ocio"));
-        this.labels.add(new LabelDto(3, "Personal"));
+        this.labels.add(new LabelDto(1, "Universidad", false));
+        this.labels.add(new LabelDto(2, "Ocio", false));
+        this.labels.add(new LabelDto(3, "Personal", false));
     }
 
     public List<LabelDto> getAllLabels() {
@@ -24,7 +24,6 @@ public class LabelBl {
     }
 
     public LabelDto getLabelById(Integer id) {
-
         //Buscamos el elemento en la lista
         LabelDto label = labels.stream()
                 .filter(t -> t.getLabelId().equals(id))
@@ -40,6 +39,7 @@ public class LabelBl {
                 .findFirst()
                 .orElse(null);
         label.setName(newLabel.getName());
+        label.setDeleted(newLabel.getDeleted());
         return label;
     }
 

@@ -7,6 +7,8 @@ public class TaskDto {
     private String description;
     private Date date;
     private List<Integer> labelIds;
+    private Date dateFinish;
+    private Boolean isDone;
 
     public TaskDto() {
     }
@@ -43,6 +45,23 @@ public class TaskDto {
     public void setLabelIds(List<Integer> labelIds) {
         this.labelIds = labelIds;
     }
+
+    public Date getDateFinish() {
+        return this.dateFinish;
+    }
+
+    public void setDateFinish(Date dateFinish) {
+        this.dateFinish = dateFinish;
+    }
+
+    public Boolean getIsDone() {
+        return this.isDone;
+    }
+
+    public void setIsDone(Boolean isDone) {
+        this.isDone = isDone;
+    }
+
 
 
     @Override

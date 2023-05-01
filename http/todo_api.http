@@ -1,30 +1,43 @@
-GET http://localhost:9999/api/v1/task
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ3d3cudWNiLmVkdS5ibyIsIm5hbWUiOiJKdWFuIFBlcmV6IiwidHlwZSI6IkFVVEgiLCJleHAiOjE2ODI0Njg3MzUsInVzZXJJZCI6MTAwfQ.MU8q2NkqCgtGMxQGHggcuBR8J9tlSSCNQBJa7q3CTsk
+//DONE: 
 
+GET http://localhost:9999/api/v1/task
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ3d3cudWNiLmVkdS5ibyIsIm5hbWUiOiJKdWFuIFBlcmV6IiwidHlwZSI6IkFVVEgiLCJleHAiOjE2ODI5MDQwNjcsInVzZXJJZCI6MTAwfQ.zYWA7IvRNUWFFYUS9eMwHqCkkwsf4k0Pgxz3Y9coKwE
+
+
+//TODO: 
 ###
 GET http://localhost:9999/api/v1/task/2
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ3d3cudWNiLmVkdS5ibyIsIm5hbWUiOiJKdWFuIFBlcmV6IiwidHlwZSI6IkFVVEgiLCJleHAiOjE2ODI0Njg3MzUsInVzZXJJZCI6MTAwfQ.MU8q2NkqCgtGMxQGHggcuBR8J9tlSSCNQBJa7q3CTsk
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ3d3cudWNiLmVkdS5ibyIsIm5hbWUiOiJKdWFuIFBlcmV6IiwidHlwZSI6IkFVVEgiLCJleHAiOjE2ODI5MDUxMzQsInVzZXJJZCI6MTAwfQ.XGF42m2ehrJnWZeI4S7W_744xn4TT6ltV6JtiKZgmfo
 
+
+//DONE: 
 ###
 POST http://localhost:9999/api/v1/task
 Content-Type: application/json
 Accept: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ3d3cudWNiLmVkdS5ibyIsIm5hbWUiOiJKdWFuIFBlcmV6IiwidHlwZSI6IkFVVEgiLCJleHAiOjE2ODI0Njg3MzUsInVzZXJJZCI6MTAwfQ.MU8q2NkqCgtGMxQGHggcuBR8J9tlSSCNQBJa7q3CTsk
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ3d3cudWNiLmVkdS5ibyIsIm5hbWUiOiJKdWFuIFBlcmV6IiwidHlwZSI6IkFVVEgiLCJleHAiOjE2ODI5MDUxMzQsInVzZXJJZCI6MTAwfQ.XGF42m2ehrJnWZeI4S7W_744xn4TT6ltV6JtiKZgmfo
 
 {
-  "description": "task description 444",
-  "date": "2019-01-01T00:00:00Z",
-  "labelIds": [1, 2 ]
+  "description": "New prueba 63323",
+  "date": "2019-02-01T00:00:00Z",
+  "labelIds": [1, 2, 3, 4],
+  "isDone": false,
+  "dateFinish": "2099-02-01T00:00:00Z"
 }
 
 
+
+//TODO: 
 ###
-PUT http://localhost:9999/api/v1/task/2
+PUT http://localhost:9999/api/v1/task/1
 Content-Type: application/json
 Accept: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ3d3cudWNiLmVkdS5ibyIsIm5hbWUiOiJKdWFuIFBlcmV6IiwidHlwZSI6IkFVVEgiLCJleHAiOjE2ODI0Njg3MzUsInVzZXJJZCI6MTAwfQ.MU8q2NkqCgtGMxQGHggcuBR8J9tlSSCNQBJa7q3CTsk
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ3d3cudWNiLmVkdS5ibyIsIm5hbWUiOiJKdWFuIFBlcmV6IiwidHlwZSI6IkFVVEgiLCJleHAiOjE2ODI5MDUxMzQsInVzZXJJZCI6MTAwfQ.XGF42m2ehrJnWZeI4S7W_744xn4TT6ltV6JtiKZgmfo
 
 {
   "description": "TArea actualizada",
-  "date": "2019-01-01T00:00:00Z"
+  "date": "2019-02-01T00:00:00Z",
+  "labelIds": [1, 2, 3, 4],
+  "isDone": true,
+  "dateFinish": "2029-02-01T00:00:00Z"
 }

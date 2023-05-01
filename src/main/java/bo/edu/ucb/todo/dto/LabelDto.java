@@ -3,13 +3,15 @@ package bo.edu.ucb.todo.dto;
 public  class LabelDto {
     private Integer labelId;
     private String name;
+    private Boolean deleted;
 
     public LabelDto() {
     }
 
-    public LabelDto(Integer labelId, String name) {
+    public LabelDto(Integer labelId, String name, Boolean deleted) {
         this.labelId = labelId;
         this.name = name;
+        this.deleted = deleted;
     }
 
     public Integer getLabelId() {
@@ -26,6 +28,18 @@ public  class LabelDto {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Boolean isDeleted() {
+        return this.deleted;
+    }
+
+    public Boolean getDeleted() {
+        return this.deleted;
+    }
+
+    public void setDeleted(Boolean deleted) {
+        this.deleted = deleted;
     }
 
     @Override
